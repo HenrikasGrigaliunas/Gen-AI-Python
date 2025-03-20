@@ -1,10 +1,5 @@
-"""Run this model in Python
-
-> pip install openai
-"""
 import os
 from openai import OpenAI
-
 from dotenv import load_dotenv
 from rich import print
 
@@ -21,7 +16,7 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "",
+            "content": "allways answer in lithuanian",
         },
         {
             "role": "user",

@@ -3,9 +3,7 @@ import os
 from dotenv import load_dotenv
 import requests
 from openai import OpenAI
-
 import json
-
 load_dotenv()
 
 openai_api_key = os.getenv("GITHUB_TOKEN")
