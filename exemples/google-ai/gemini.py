@@ -1,4 +1,4 @@
-import base64
+# Description: This script is an example of how to use the Google AI API to generate text using the Gemini model.
 import os
 from google import genai
 from google.genai import types
@@ -9,7 +9,7 @@ load_dotenv()
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 
-
+# Generate text using the Gemini model
 def generate():
     client = genai.Client(
         api_key=gemini_api_key,
@@ -37,6 +37,7 @@ def generate():
             ],
         ),
     ]
+    # Generate content
     generate_content_config = types.GenerateContentConfig(
         temperature=1,
         top_p=0.95,
